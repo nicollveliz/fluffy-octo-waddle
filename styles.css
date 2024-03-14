@@ -1,0 +1,206 @@
+/* styles.css */
+
+
+body {
+    font-family: 'Madimi One', sans-serif; /* Cambiamos la fuente del cuerpo del documento */
+    margin: 0;
+    padding: 0;
+    background-color: #913030;
+}
+
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #913030;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #913030;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #333333;
+    color: #913030;
+    padding: 20px;
+    text-align: center;
+}
+
+/* styles.css */
+
+/* Resto del CSS */
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+    color: #913030; /* Color de texto blanco */
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%); /* Inicialmente oculto */
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+}
+
+.gallery-item:hover .gallery-description {
+    transform: translateY(0); /* Mostrar la descripción al pasar el mouse */
+}
+/* styles.css */
+
+main {
+    background-color: #fcf6a5;
+    color: #913030;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #913030;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #913030;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #f2b600;
+}
+
+#contact-form button:active {
+    background-color: #e69900;
+}
+/* styles.css */
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Añadimos transición para suavizar el cambio de color */
+}
+
+nav ul li a:hover {
+    color: #f2b600; /* Cambiamos el color al pasar el mouse */
+}
+
+nav ul li.active a {
+    color: #ffcc00; /* Cambiamos el color cuando el enlace está activo */
+}
+/* styles.css */
+
+#inicio {
+    text-align: center; /* Centramos el texto */
+}
+
+#inicio h2 {
+    font-size: 36px; /* Aumentamos el tamaño del título */
+    margin-bottom: 20px; /* Añadimos un poco de espacio inferior */
+}
+
+#inicio p {
+    font-size: 18px; /* Aumentamos el tamaño del texto */
+    line-height: 1.5; /* Añadimos un poco de espacio entre líneas */
+}
+/* styles.css */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* styles.css */
+
+.video-container-small {
+    max-width: 400px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    overflow: hidden; /* Evita que el video se desborde */
+}
